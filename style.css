@@ -13,13 +13,13 @@
 body {
    margin: 0;
    padding: 0;
+   font-size: 20px;
+   letter-spacing: 2px;
 }
 
 * {
    font-family: 'Roboto Mono', sans-serif;
    box-sizing: border-box;
-   font-size: 20px;
-   letter-spacing: 2px;
    
 
 }
@@ -86,6 +86,7 @@ body {
    border-bottom: .5px solid var(--y--y);
    padding-left: 30px;
    padding-bottom: 30px;
+   background-color: var(--x--x);
   
 
    #gaston-id {
@@ -164,6 +165,7 @@ body {
    padding-bottom: 50px;
    padding-top: 50px;
    border-bottom: .5px solid var(--y--y);
+   background-color: var(--x--x);
    
 
    h1 {
@@ -209,6 +211,7 @@ body {
    padding-bottom: 50px;
    padding-top: 50px;
    border-bottom: .5px solid var(--y--y);
+   background-color: var(--x--x);
 
    h1 {
     color: var(--y--y);
@@ -242,6 +245,7 @@ body {
    padding-bottom: 50px;
    padding-top: 50px;
    border-bottom: .5px solid var(--y--y);
+   background-color: var(--x--x);
 
    h1 {
     font-size: 25px;
@@ -386,3 +390,26 @@ body {
     color: var(--w--w);
   }
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+       font-size: 14px;
+    }
+ 
+    .gaston h1, 
+    .gaston #gaston-id {
+       font-size: 36px; /* título más chico */
+       line-height: 1.2;
+    }
+ 
+    .educacion h1, 
+    .habilidades h1, 
+    .contacto h1 {
+       font-size: 20px;
+    }
+ 
+    .menu-mobile a {
+       font-size: 16px;
+    }
+ }
