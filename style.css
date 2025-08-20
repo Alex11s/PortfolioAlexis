@@ -1,0 +1,381 @@
+:root {
+
+    --z--z: #11001c;
+    --x--x: #1a0029;
+    --w--w: #45FFCA;
+    --y--y: #af9bea;
+    --g--g: #ff448c;
+    --a--a: #FEDB39;
+    --t--t: #cac1e3;
+
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+* {
+   font-family: 'Roboto Mono', sans-serif;
+   box-sizing: border-box;
+   font-size: 20px;
+   letter-spacing: 2px;
+   
+
+}
+
+.container {
+   display: grid;
+   grid-template: 
+       "menu gaston" auto
+       "menu educacion" auto
+       "menu habilidades" auto
+       "menu contacto" auto/
+       200px 1fr;
+   margin: 0;
+   padding: 0;
+   background-color: var(--x--x);
+}
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--x--x);
+   align-items: center;
+   grid-row: 1 / -1;
+   height: 100%;
+   
+   
+
+   img {
+       width: 150px;
+       margin-top: 60px;
+   }
+
+   .links {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 40px;
+       gap: 30px;
+       position: sticky;
+       top: 20px;
+       letter-spacing: 2px;
+       top: 40px;
+       
+       a {
+           text-decoration: none;
+           color: var(--t--t);
+           font-size: 16px;
+       }
+
+       a:hover {
+           color: var(--w--w);
+
+       }
+   }
+}
+.gaston {
+   grid-area: gaston;
+   background-color: var(--x--x);
+   color: var(--y--y);
+   margin-top: 20px;
+   border-left: .5px solid var(--y--y);
+   border-bottom: .5px solid var(--y--y);
+   padding-left: 30px;
+   padding-bottom: 30px;
+  
+
+   #gaston-id {
+       color: var(--g--g);
+       font-size: 100px;    
+   }
+
+
+   h1 {
+       font-size: 100px;
+       margin-bottom: 20px;
+   }
+
+   .mailto {
+       display: flex;
+       align-items: center;
+       gap: 20px;
+       color: var(--g--g);
+
+       a {
+           color: var(--w--w);
+           text-decoration: none;
+       }
+   }
+
+   .button-cv {
+       background-color: var(--g--g);
+       width: 170px;
+       padding: 10px;
+       text-align: center;
+       border-radius: 20px;
+       margin-top: 30px;
+
+       a {
+           text-decoration: none;
+           color: white;
+           font-size: 15px;
+       }
+   }
+
+   .button-cv:hover {
+       background-color: var(--w--w);
+       
+       a {
+           color: var(--x--x);
+       }
+
+   }
+}
+
+.icons-contact {
+
+   display: flex;
+   gap: 15px;
+   font-size: 20px;
+   margin-top: 35px;
+   
+
+   a {
+       text-decoration: none;
+   }
+
+   i {
+       color: white;
+   }
+
+   i:hover {
+       color: var(--w--w);
+   }
+}
+
+.educacion {
+   grid-area: educacion;
+   border-left: .5px solid var(--y--y);
+   padding-left: 30px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   border-bottom: .5px solid var(--y--y);
+   
+
+   h1 {
+       font-size: 25px;
+       color: var(--y--y);
+   }
+
+   p2 {
+       color: var(--g--g)
+   }
+
+   p3 {
+       color: var(--w--w);
+   }
+
+   h4 {
+       color: var(--y--y);
+   }
+
+   h2 {
+    color: var(--y--y);
+    font-size: 25px;
+   }
+
+   .pdng {
+
+    padding-bottom: 50px;
+   }
+
+   .education-age {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+
+   }
+}
+
+.habilidades {
+   grid-area: habilidades;
+   border-left: .5px solid var(--y--y);
+   padding-left: 30px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   border-bottom: .5px solid var(--y--y);
+
+   h1 {
+    color: var(--y--y);
+    padding-bottom: 20px;
+    font-size: 25px;
+   }
+
+   p2 {
+    color: var(--g--g);
+   }
+
+   img {
+    width: 30px;
+   }
+
+   .img-p {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+   }
+
+
+
+
+}
+
+.contacto {
+   grid-area: contacto;
+   border-left: .5px solid var(--y--y);
+   padding-left: 30px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   border-bottom: .5px solid var(--y--y);
+
+   h1 {
+    font-size: 25px;
+    color: var(--y--y);
+   }
+
+   .gmail-l {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--g--g);
+    gap: 10px;
+    margin-bottom: 10px;
+
+        img {
+            width: 25px;
+        }
+
+        a {
+            color: var(--w--w);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FEDB39;
+
+        }
+   }
+
+   .linkedin-l {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--g--g);
+    gap: 10px;
+
+        img {
+            width: 25px;
+        }
+
+        a {
+            color: var(--w--w);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FEDB39;
+
+        }
+
+   }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        display: grid;
+        grid-template: 
+            "gaston" auto
+            "educacion" auto
+            "habilidades" auto
+            "contacto" auto/
+             1fr;
+        margin: 0;
+        padding: 0;
+        background-color: var(--x--x);
+        padding-left: 60px;
+     }
+
+     .menu {
+        display: none;
+     }
+
+     .educacion {
+
+        .education-age {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            p3 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+     }
+
+     /* Botón hamburguesa */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    color: var(--w--w);
+    cursor: pointer;
+    z-index: 2000;
+  }
+  
+  /* Menú mobile */
+  .menu-mobile {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    background-color: var(--x--x);
+    padding-top: 80px;
+    gap: 30px;
+    padding-left: 20px;
+    z-index: 1500;
+  }
+  
+  .menu-mobile a {
+    text-decoration: none;
+    color: var(--t--t);
+    font-size: 18px;
+  }
+  
+  .menu-mobile a:hover {
+    color: var(--w--w);
+  }
+  
+  /* Solo aparece en móviles */
+  @media screen and (max-width: 1000px) {
+    .hamburger {
+      display: block;
+    }
+  }
+  
+
+
+}
