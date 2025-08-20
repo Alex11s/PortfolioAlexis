@@ -341,6 +341,12 @@ body {
 
      }
 
+     .gaston, .educacion, .habilidades, .contacto {
+
+        border-left: none;
+
+     }
+
     
 }
 
