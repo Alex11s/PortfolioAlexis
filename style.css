@@ -296,6 +296,8 @@ body {
 
 }
 
+
+
 @media screen and (max-width: 1000px) {
 
     .container {
@@ -331,9 +333,24 @@ body {
 
      }
 
-     /* Botón hamburguesa */
-.hamburger {
-    display: none;
+}
+
+
+/* 🔹 Ocultamos el menú mobile y el hamburguesa en desktop */
+.hamburger,
+.menu-mobile {
+  display: none;
+}
+
+/* 🔹 Mobile */
+@media screen and (max-width: 1000px) {
+  .menu {
+    display: none; /* oculta el menú lateral */
+  }
+
+  /* Ícono hamburguesa */
+  .hamburger {
+    display: block;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -342,10 +359,10 @@ body {
     cursor: pointer;
     z-index: 2000;
   }
-  
+
   /* Menú mobile */
   .menu-mobile {
-    display: none;
+    display: none; /* se muestra solo al clickear */
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -358,24 +375,14 @@ body {
     padding-left: 20px;
     z-index: 1500;
   }
-  
+
   .menu-mobile a {
     text-decoration: none;
     color: var(--t--t);
     font-size: 18px;
   }
-  
+
   .menu-mobile a:hover {
     color: var(--w--w);
   }
-  
-  /* Solo aparece en móviles */
-  @media screen and (max-width: 1000px) {
-    .hamburger {
-      display: block;
-    }
-  }
-  
-
-
 }
