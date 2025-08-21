@@ -346,6 +346,16 @@ body {
         border-left: none;
 
      }
+ 
+     .gaston h1 {
+          font-size: 50px;
+        }
+      
+     #gaston-id {
+          font-size: 50px;
+        }
+      }
+      
 
     
 }
