@@ -308,6 +308,17 @@ body {
 
 @media screen and (max-width: 1000px) {
 
+    html, body {
+        width: 100vw;
+        overflow-x: hidden;
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    #gaston-id {
+        font-size: 10px;
+    }
+
     .container {
         display: grid;
         grid-template: 
@@ -315,11 +326,11 @@ body {
             "educacion" auto
             "habilidades" auto
             "contacto" auto/
-             1fr;
+             400px;
         margin: 0;
         padding: 0;
         background-color: var(--x--x);
-        padding-left: 60px;
+        margin-right: 20px;
      }
 
      .menu {
@@ -361,6 +372,7 @@ body {
 
 /* 🔹 Mobile */
 @media screen and (max-width: 1000px) {
+
   .menu {
     display: none; /* oculta el menú lateral */
   }
@@ -403,4 +415,3 @@ body {
     color: var(--w--w);
   }
 }
-
